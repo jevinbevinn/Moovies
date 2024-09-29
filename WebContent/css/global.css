@@ -1,0 +1,39 @@
+html body {
+    color: #DEE2E6;
+    background-color: #0A0C0F;
+    padding: 1.5rem 10vw;
+    margin-top: 75px;
+}
+
+html body a {
+    color: #af88ff;
+    transition: color 200ms ease;
+}
+
+html body a:hover {
+    color: #f2ebff;
+}
+
+.d-flex {
+    gap: 1rem;
+}
+
+.table-dark thead th {
+    background-color: #712cf9;
+}
+
+.primary {
+    color: #712cf9;
+}
+
+body .table>:not(caption)>*>* {
+    padding: 0.75rem;
+}
+
+#employee-dashboard .employee-dash-form {
+    background: blueviolet;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-items: center;
+    color: white;
+}

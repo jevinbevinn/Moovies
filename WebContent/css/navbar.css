@@ -1,0 +1,36 @@
+html body #navBar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #171717;
+    border-bottom: white 2px solid;
+}
+
+.nav-item a {
+    color: rgba(255,255,255,0.75);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-item a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-item a.active {
+    color: white;
+    font-weight: 700;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+.autocomplete-searchbox {
+    height: 50px;
+    width: 600px;
+}

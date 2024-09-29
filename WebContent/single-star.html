@@ -1,0 +1,65 @@
+<!-- This example is following frontend and backend separation.
+
+    This .html performs two steps:
+    1. Create a html template skeleton, with all the elements defined (some left empty) and named with ids.
+    2. Load single-star.js to populate the data into empty elements.
+    -->
+
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <title>Single Star</title>
+</head>
+<body>
+<nav id="navBar" class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+
+<div class="d-flex flex-row align-items-baseline">
+    <h1 id="single_star_name"></h1>
+    <h2 id="single_star_dob"></h2>
+</div>
+
+<table id=star_table class="table table-striped table-dark table-borderless">
+    <thead>
+    <tr>
+        <th>Movie Title</th>
+        <th>Release Year</th>
+        <th>Director</th>
+        <th>Cart</th>
+    </tr>
+    </thead>
+
+    <!-- Table body is left empty here, will be populated with the data retrieved with single-star.js -->
+    <!-- single-star.js will find this html element by it's id "movie_table_body" -->
+    <tbody id=star_table_body></tbody>
+</table>
+
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to single-star.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="js/single-star.js"></script>
+<script src="js/navbar.js"></script>
+</body>
+
+
+</html>
